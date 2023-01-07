@@ -276,9 +276,6 @@ ul {
   border: var(--border-form-input);
   border-radius: 4px;
 }
-.form__input {
-  /* svg */
-}
 .form__comment {
   padding: 12px 16px;
   height: 120px;
@@ -666,7 +663,7 @@ body {
   width: 170px;
   height: 92px;
 
-  border: var(--border-color-client-item);
+  border: var(--border-client-item);
   border-radius: 4px;
 
   transition: var(--transition-border-color);
