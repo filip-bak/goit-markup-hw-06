@@ -472,7 +472,7 @@
           </address>
         </div>
         <div class="footer__item">
-          <h5 class="footer__title">Dołącz do nas</h5>
+          <p class="footer__title">Dołącz do nas</p>
           <ul class="social">
             <li class="social__background">
               <a class="social__logo" href="#">
@@ -505,7 +505,7 @@
           </ul>
         </div>
         <div class="footer__item">
-          <h5 class="footer__title">Zapisz się do newslettera</h5>
+          <p class="footer__title">Zapisz się do newslettera</p>
           <div class="newsletter">
             <input
               class="newsletter__input--email"
@@ -528,6 +528,71 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form name="service-form">
+          <h2 class="form__title center">
+            Zostaw swoje dane w formularzu poniżej
+          </h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <label for="name" class="form__contact">Imie</label
+              ><input
+                type="text"
+                class="form__input"
+                name="first-name"
+                id="name"
+              />
+            </li>
+            <li class="form__item">
+              <label for="telephone" class="form__contact">Telefon</label
+              ><input
+                type="tel"
+                class="form__input"
+                name="telephone"
+                id="telephone"
+              />
+            </li>
+            <li class="form__item">
+              <label for="email" class="form__contact">Email</label
+              ><input
+                type="email"
+                class="form__input"
+                name="email"
+                id="email"
+              />
+            </li>
+            <li class="form__item">
+              <label for="comment" class="form__contact">Komentarz</label
+              ><textarea
+                name="comment"
+                id="comment"
+                class="form__comment"
+                rows="6"
+                placeholder="Wprowadź text"
+              ></textarea>
+            </li>
+            <li class="form__item">
+              <input
+                type="checkbox"
+                name="terms"
+                class="form__checkbox"
+                id="terms"
+              />
+              <label for="terms" class="form__terms"
+                >Oświadczam iż akceptuję
+                <a class="form__link" href="#">Regulamin</a> i
+                <a class="form__link" href="#">Politykę Prywatności</a>.</label
+              >
+            </li>
+            <li class="form__item">
+              <button
+                class="form__button button--primary button__text--primary"
+                type="submit"
+              >
+                Wyślij
+              </button>
+            </li>
+          </ul>
+        </form>
         <button class="modal__button--close" type="button" data-modal-close>
           <svg class="modal__svg-close" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
