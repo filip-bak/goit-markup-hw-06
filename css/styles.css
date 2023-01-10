@@ -698,16 +698,16 @@ form .form__button {
   fill: var(--svg-fill-social);
   transition: var(--transition-fill);
 }
-/* social hover*/
-.social__logo:hover {
+/* social hover/focus*/
+.social__logo:is(:hover, :focus) {
   background-color: var(--bgcolor-social-hover);
 }
-.footer .social__logo:hover {
-  background-color: var(--bgcolor-social-footer-hover);
-}
-/* social icon hover */
-.social__logo:hover .social__svg:not(.footer .social__svg) {
+/* social icon hover/focus */
+.social__logo:is(:hover, :focus) .social__svg:not(.footer .social__svg) {
   fill: var(--svg-fill-social-hover);
+}
+.footer .social__logo:is(:hover, :focus) {
+  background-color: var(--bgcolor-social-footer-hover);
 }
 
 /* | CLIENTS */
