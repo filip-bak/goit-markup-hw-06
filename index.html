@@ -593,11 +593,22 @@
                 class="form__checkbox input--reset"
                 id="terms"
               />
-              <label for="terms" class="form__terms"
-                >Oświadczam iż akceptuję
-                <a class="form__link" href="#">Regulamin</a> i
-                <a class="form__link" href="#">Politykę Prywatności</a>.</label
-              >
+              <label for="terms" class="form__terms">
+                <div class="form__checkbox--icon">
+                  <svg class="check-off__svg" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check-off"></use>
+                  </svg>
+                  <svg class="check-on__svg" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check-on"></use>
+                  </svg>
+                </div>
+
+                <span class="form__terms--text">
+                  Oświadczam iż akceptuję
+                  <a class="form__link" href="#">Regulamin</a> i
+                  <a class="form__link" href="#">Politykę Prywatności</a>.
+                </span>
+              </label>
             </li>
             <li class="form__item">
               <button
