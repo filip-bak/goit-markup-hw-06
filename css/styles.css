@@ -238,6 +238,35 @@ body {
 
   box-shadow: var(--shadow-modal);
 }
+.modal__button--close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+
+  padding: 10px;
+
+  background-color: #fff;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+.modal__svg-close {
+  fill: black;
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+
+  transform: translateY(-100%);
+}
+/* FORM */
 .form__title {
   margin-bottom: 12px;
 
@@ -345,6 +374,7 @@ body {
 form .form__button {
   padding-inline: 76px;
 }
+
 /* focus */
 .form__input:focus,
 .form__comment:focus {
@@ -355,17 +385,19 @@ form .form__button {
 .form__input:focus + .form__svg {
   fill: var(--svg-fill-form-contact-hover);
 }
-.input--reset {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
+
+/* CHECKBOX */
 .form__checkbox--icon {
   position: relative;
   display: inline-block;
   width: 16px;
   height: 15px;
   pointer-events: auto;
+}
+.input--reset {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 /* check-off */
 .form__checkbox + .form__terms .check-off__svg {
@@ -386,34 +418,7 @@ form .form__button {
 .form__button {
   transition: var(--transition-button);
 }
-.modal__button--close {
-  position: absolute;
-  right: 8px;
-  top: 8px;
 
-  display: flex;
-
-  padding: 10px;
-
-  background-color: #fff;
-  border: 1px solid #0000001a;
-  border-radius: 50%;
-
-  cursor: pointer;
-}
-.modal__svg-close {
-  fill: black;
-}
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-
-  transform: translateY(-100%);
-}
 /* input auto fill reset */
 /* .form__input:-webkit-autofill,
 .form__input:-webkit-autofill:focus {
