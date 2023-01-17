@@ -855,6 +855,7 @@ body {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .footer .social__logo {
   background-color: var(--bgcolor-social-footer);
@@ -962,6 +963,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+.card__item {
+  transition: var(--transition-shadow);
 }
 .card__info {
   padding: 20px 0 20px 24px;
